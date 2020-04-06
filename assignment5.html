@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+<b>Board of Control for Cricket in India </b>
+<br>
+<br>
+<canvas id="Canvas" width="400" height="250" style="border:1px">
+</canvas>
+<p>Batting statistics of the Indian team for a T20 cricket match.</p>
+<script>
+var p = document.getElementById("Canvas");
+var context = p.getContext("2d");
+
+
+context.strokeText("280",0,20);
+context.strokeText("240",0,50);
+context.strokeText("200",0,80);
+context.strokeText("160",0,110);
+context.strokeText("120",0,140);
+context.strokeText("80",0,170);
+context.strokeText("40",0,200);
+context.strokeText("0",0,230);
+context.moveTo(30,250);
+context.lineTo(30,0);
+context.moveTo(0,230);
+context.lineTo(400,230);
+
+
+
+context.strokeText("5",100,240);
+
+context.strokeText("10",150,240);
+context.strokeText("15",200,240);
+context.strokeText("20",240,240);
+
+
+context.moveTo(100, 195); 
+context.lineTo(150, 175); 
+context.moveTo(150, 175);
+context.lineTo(200, 120); 
+context.moveTo(200, 120);
+context.lineTo(240, 60); 
+
+
+context.stroke();
+
+
+</script>
+</body>
+</html>

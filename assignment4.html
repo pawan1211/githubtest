@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<b>Agricultural Statistical Department of GOI </b>
+<br>
+<br>
+<canvas id="Canvas" width="400" height="350" style="border:1px">
+</canvas>
+<p>The line chart of the yield of Bajra from 2001 to 2007.</p>
+<script>
+var p = document.getElementById("Canvas");
+var context = p.getContext("2d");
+
+context.strokeText("500",0,20);
+context.strokeText("450",0,40);
+context.strokeText("400",0,60);
+context.strokeText("350",0,80);
+context.strokeText("300",0,100);
+context.strokeText("250",0,120);
+context.strokeText("200",0,140);
+context.strokeText("100",0,160);
+context.strokeText("50",0,180);
+
+
+context.moveTo(30,250);
+context.lineTo(30,0);
+context.moveTo(0,230);
+context.lineTo(400,230);
+
+
+context.strokeText("2001",40,250);
+context.strokeText("2002",70,250);
+context.strokeText("2003",100,250);
+
+
+context.strokeText("2004",130,250);
+context.strokeText("2005",160,250);
+context.strokeText("2006",190,250);
+context.strokeText("2007",220,250);
+
+
+
+context.moveTo(40, 108); 
+context.lineTo(70, 109); 
+context.moveTo(70, 109);
+context.lineTo(100, 110); 
+context.moveTo(100, 110);
+context.lineTo(130, 37); 
+context.moveTo(130, 37);
+context.lineTo(160, 140);
+context.moveTo(160, 140);
+context.lineTo(190, 108);  
+context.moveTo(190, 108);
+context.lineTo(220, 150); 
+
+
+
+context.stroke();
+
+
+</script>
+</body>
+</html>
